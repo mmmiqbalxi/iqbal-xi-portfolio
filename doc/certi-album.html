@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Album</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- logo web -->
+    <link rel="icon" href="/img/pf-icon.jpeg">
+    <!-- icon web -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="container header-container">
+            <h1 class="logo"><a href="/index.html">Kembali ke Portfolio</a></h1>
+            <button id="themeToggle" aria-label="Toggle Theme">
+                <span class="iconify" data-icon="mdi:weather-night" data-inline="false"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- skills album -->
+    <section class="certificates">
+        <div class="container">
+            <h3>Certificates</h3>
+            <p>Klik Sertifikat Untuk Melihat Gambar</a></p>
+            <div class="cert-grid">
+                <!-- card -->
+                <div class="cert-card" onclick="openModal('/img/certi1.png')">
+                    <img src="/img/certi1.png" alt="Certificate 1">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi2.jpg')">
+                    <img src="/img/certi2.jpg" alt="Certificate 2">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi3.png')">
+                    <img src="/img/certi3.png" alt="Certificate 3">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi4.png')">
+                    <img src="/img/certi4.png" alt="Certificate 4">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi5.png')">
+                    <img src="/img/certi5.png" alt="Certificate 5">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi6.png')">
+                    <img src="/img/certi6.png" alt="Certificate 6">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi7.jpg')">
+                    <img src="/img/certi7.jpg" alt="Certificate 7">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi8.jpg')">
+                    <img src="/img/certi8.jpg" alt="Certificate 8">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi9.png')">
+                    <img src="/img/certi9.png" alt="Certificate 9">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi10.png')">
+                    <img src="/img/certi10.png" alt="Certificate 10">
+                </div>
+                <div class="cert-card" onclick="openModal('/img/certi11.png')">
+                    <img src="/img/certi11.png" alt="Certificate 11">
+                </div>
+            </div>
+        </div>
+
+        <!-- modal fitur -->
+        <div class="modal" id="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage" alt="Certificate Preview">
+        </div>
+    </section>
+
+    <!-- javascript -->
+    <script src="/script.js"></script>
+</body>
+</html>

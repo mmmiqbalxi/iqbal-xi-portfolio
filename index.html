@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqbal XI</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- logo web -->
+    <link rel="icon" href="img/pf-icon.jpeg">
+    <!-- icon web -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="container header-container">
+            <h1 class="logo"><a href="index.html">Iqbal XI</a></h1>
+            <button id="themeToggle" aria-label="Toggle Theme">
+                <span class="iconify" data-icon="mdi:weather-night" data-inline="false"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- profile section -->
+        <section class="profile">
+            <div class="container">
+                <div class="profile-picture">
+                    <img src="img/pfp.jpg" alt="Iqbal Picture" class="avatar">
+                </div>
+                <h2 class="name">Muhamad Iqbal</h2>
+                <h2 class="role">Web Developer</h2>
+            </div>
+            <div class="details">
+                <div class="detail-item">
+                    <span class="iconify" data-icon="mdi:school-outline" data-inline="false"></span>
+                    <p>SMKN 1 MAJA</p>
+                </div>
+                <div class="detail-item">
+                    <span class="iconify" data-icon="mdi:map-marker-outline" data-inline="false"></span>
+                    <p>Majalengka, Indonesia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <div class="about">
+            <div class="about-container">
+                <div class="content">
+                    <h2>About Me</h2>
+                    <p>
+                        Hai, saya Muhamad Iqbal, seorang junior web developer, Saya sedang fokus mengembangkan skill di front-end dan belajar back-end untuk menjadi full-stack developer. Jangan lupa untuk cek semua project saya dan lihat list skill yang saya kuasai, ya !!
+                    </p>
+                    <button id="download-btn" class="download-btn">Download CV</button>
+                </div>
+                <!-- notif -->
+                <div id="custom-alert" class="custom-alert">
+                    <div class="alert-box">
+                        <h2>Apakah Anda ingin mengunduh CV?</h2>
+                        <p>Klik OK untuk melanjutkan atau Cancel untuk membatalkan.</p>
+                        <div class="alert-button">
+                            <button id="ok-btn" class="ok-btn">OK</button>
+                            <button id="cancel-btn" class="cancel-btn">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- skills section -->
+        <section class="skills">
+            <div class="skill-container">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="terminal-title">my-skills.exe</div>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">$ ./list-skills</div>
+                        <div class="skill-list">
+                            <!-- programming -->
+                            <div class="skill-category">
+                                <h3 class="category-title">Programming</h3>
+                                <div class="skill-item">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-css3"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-js"></i>
+                                    <span>Javascript</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-php"></i>
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+                            <!-- framework -->
+                            <div class="skill-category">
+                                <h3 class="category-title">Framework</h3>
+                                <div class="skill-item">
+                                    <i class="fab fa-bootstrap"></i>
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-laravel"></i>
+                                    <span>Laravel</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node js</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React Js</span>
+                                </div>
+                            </div>
+                            <!-- databaase -->
+                            <div class="skill-category">
+                                <h3 class="category-title">Database</h3>
+                                <div class="skill-item">
+                                    <span class="iconify" data-icon="mdi:database"></span>
+                                    <span class="typing">SQL</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="iconify" data-icon="logos:mysql"></span>
+                                    <span class="typing">MySQL</span>
+                                </div>
+                            </div>
+                            <!-- ui/ux -->
+                            <div class="skill-category">
+                                <h3 class="category-title">UI/UX</h3>
+                                <div class="skill-item">
+                                    <span class="iconify" data-icon="logos:figma"></span>
+                                    <span class="typing">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- project section -->
+        <section class="projects">
+            <div class="container">
+                <h3>Projects</h3>
+                <p>Klik Gambar Project Untuk Menuju Repository Github atau <a href="doc/project-album.html">Lihat Semua Project</a></p>
+                <div class="project-grid">
+                    <!-- card -->
+                    <div class="project-card">
+                        <a href="https://github.com/mmmiqbalxi/web-dior-kelompok" target="_blank">
+                            <img src="img/ss1.png" alt="Project 1">
+                        </a>
+                        <h4>Dior Web (Kelompok)</h4>
+                        <p>Project Web Tugas Kelompok</p>
+                    </div>
+                    <div class="project-card">
+                        <a href="https://github.com/mmmiqbalxi/sumpah-pemuda-web" target="_blank">
+                            <img src="img/ss2.png" alt="Project 2">
+                        </a>
+                        <h4>Sumpah Pemuda Web</h4>
+                        <p>Project web lomba educourse 2024</p>
+                    </div>
+                    <div class="project-card">
+                        <a href="#">
+                            <img src="img/ss3.png" alt="Project 3">
+                        </a>
+                        <h4>Iqbal Portfolio</h4>
+                        <p>Project web untuk portfolio saya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- certificate section -->
+        <section class="certificates">
+            <div class="container">
+                <h3>Certificates</h3>
+                <p>Klik Sertifikat Untuk Melihat Gambar atau <a href="doc/certi-album.html">Lihat Semua Certificate</a></p>
+                <div class="cert-grid">
+                    <!-- card -->
+                    <div class="cert-card" onclick="openModal('img/certi1.png')">
+                        <img src="img/certi1.png" alt="Certificate 1">
+                    </div>
+                    <div class="cert-card" onclick="openModal('img/certi2.png')">
+                        <img src="img/certi2.jpg" alt="Certificate 2">
+                    </div>
+                    <div class="cert-card" onclick="openModal('img/certi3.png')">
+                        <img src="img/certi3.png" alt="Certificate 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal fitur -->
+            <div class="modal" id="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage" alt="Certificate Preview">
+            </div>
+        </section>
+
+        <!-- contacts section -->
+        <section class="contacts">
+            <div class="container">
+                <span class="icon iconify" data-icon="mdi:email"></span>
+                <h3>Contact Me</h3>
+                <form action="https://formspree.io/f/xnnnnkap" id="contact-form" method="POST">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan Nama Anda" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required>
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Ketik Pesan ..." required></textarea>
+
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/iqbalm11_" target="_blank" aria-label="LinkedIn">
+                        <span class="iconify" data-icon="mdi:linkedin" data-width="30"></span>
+                    </a>
+                    <a href="https://github.com/mmmiqbalxi" target="_blank" aria-label="GitHub">
+                        <span class="iconify" data-icon="mdi:github" data-width="30"></span>
+                    </a>
+                    <a href="https://www.instagram.com/iqbalm11_" target="_blank" aria-label="Instagram">
+                        <span class="iconify" data-icon="mdi:instagram" data-width="30"></span>
+                    </a>
+                    <a href="https://wa.me/6283103208436" target="_blank" aria-label="WhatsApp">
+                        <span class="iconify" data-icon="mdi:whatsapp" data-width="30"></span>
+                    </a>
+                </div>
+                <!-- email -->
+                <p>mmmiqbalxi@gmail.com</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
