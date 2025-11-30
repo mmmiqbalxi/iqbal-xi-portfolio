@@ -73,8 +73,8 @@ document.getElementById("cancel-btn").addEventListener("click", () => {
 // mengunduh CV jika OK di klik
 document.getElementById("ok-btn").addEventListener("click", () => {
     const link = document.createElement("a");
-    link.href = "doc/M-Iqbal-CV.pdf";
-    link.download = "Muhamad-Iqbal-CV.pdf";
+    link.href = "doc/CV-&-Portfolio-Muhamad-Iqbal.pdf";
+    link.download = "CV & Portfolio Muhamad Iqbal";
     link.click();
     document.getElementById("custom-alert").style.display = "none";
 });
